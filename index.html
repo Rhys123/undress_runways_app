@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Undress Runways</title>
+    <link href="style/style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+	<script type="text/javascript" src="style/jquery.cycle.lite.js"></script>
+    
+  </head>
+
+  <body>
+  
+    <header>
+      <button class="hamburger"><img class="logo" src="images/logo.png"/></button>
+    </header>
+    
+    <div class="menu">
+      <ul>
+        <a href="designers.html"><li>DESIGNERS</li></a>
+        <a href="hair_and_makeup.html"><li>HAIR & MAKEUP</li></a>
+        <a href="tickets.html"><li>PROGRAM & TICKETS</li></a>
+        <a href="updates.html"><li>UPDATES</li></a>
+        <a href="#"><li>FUTURE OF FASHION</li></a>
+        <a href="#"><li>PARTNERS</li></a>
+      </ul>
+    </div> 
+    
+     <a href="questionaire.html"><button class="questionaire">	&#81;</button></a>
+    
+    <div id="slideshow">
+    	<img src="images/aptopix-fashion-theyskens-theory-fall-2012-backstage.jpg" class="bgM"/>
+        <img src="images/Cameron+and+James.jpg" class="bgM"/>
+        <img src="images/70f39a33c31f153b8a073ddc72022ebd.jpg" class="bgM"/>
+    </div>
+    
+   <script>
+	$(document).ready(function() {
+		$('#slideshow').cycle({
+		fx: 'fade',
+		pager: '#smallnav',
+		pause:   1,
+		speed: 1800,
+		timeout:  3500
+		});
+	});
+</script>
+
+  </body>
+</html>

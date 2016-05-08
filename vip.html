@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Undress Runways</title>
+    <link href="style/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+				slidesNavigation: true,
+			});
+		});
+	</script>
+  </head>
+
+  <body>
+  
+    <header>
+		<button class="hamburger"><img class="logo" src="images/logo.png"/></button>
+      	<button class="cross">&#735;</button>
+    </header>
+    
+    <div class="menu">
+      <ul>
+      	<a href="index.html"><li>HOME</li></a>
+        <a href="designers.html"><li>DESIGNERS</li></a>
+        <a href="hair_and_makeup.html"><li>HAIR & MAKEUP</li></a>
+        <a href="tickets.html"><li>PROGRAM & TICKETS</li></a>
+        <a href="updates.html"><li>UPDATES</li></a>
+        <a href="#"><li>FUTURE OF FASHION</li></a>
+        <a href="#"><li>PARTNERS</li></a>
+      </ul>
+    </div> 
+    
+    <div class="container">
+    	<h2>|  VIP Pass  |</h2>
+        <h1>$100</h1>
+        <h2>Includes</h2>
+        <p style="font-style:italic">FRONT ROW SEAT</p>
+        <p style="font-style:italic">UNLIMITED DRINKS</p>
+        <p style="font-style:italic">PERK</p>
+        <br>
+        <a href=".html"><div class="purchase">Buy Now</div></a>
+        <br>
+        <a href="tickets.html"><div class="back"><< back</div></a>
+    </div>
+    
+   
+    <script>
+	  $( ".cross" ).hide();
+	$( ".menu" ).hide();
+	$( ".hamburger" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".hamburger" ).hide();
+	$( ".cross" ).show();
+	});
+	});
+	
+	$( ".cross" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".cross" ).hide();
+	$( ".hamburger" ).show();
+	});
+	});
+	</script>
+  </body>
+</html>
